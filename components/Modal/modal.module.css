@@ -1,0 +1,70 @@
+.wrapProductModal{
+    position: fixed;
+    width: 100vw;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalProduct{
+    background: #080B2A;
+    border-radius: 10px;
+    width: max-content;
+    border: 1px solid #fafafa;
+    width: 600px;
+    position: relative;
+}
+.gallery{
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+}
+.wrapImage{
+     width: 570px;
+     height: 400px;
+     position: relative;
+ }
+.Image{
+    object-fit: cover;
+    border-radius: 20px;
+}
+.cardInfo h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+.cardInfo{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.cardInfo .price{
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+.price::after{
+    content: "$";
+}
+.rating::after{
+    content: "⭐";
+    height: 20px;
+}
+.description{
+    width: 100%;
+    text-wrap: normal;
+}
+.cardInfo p{
+    margin: 0.3rem 0;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 20;
+}

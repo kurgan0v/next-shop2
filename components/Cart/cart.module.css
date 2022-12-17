@@ -1,0 +1,48 @@
+.wrapCartModal{
+    position: fixed;
+    width: 100vw;
+    background: rgba(0,0,0,.5);
+    z-index: 10;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalCart{
+    background: #080B2A;
+    border-radius: 10px;
+    width: max-content;
+    border: 1px solid #fafafa;
+    position: relative;
+}
+.close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 20;
+}
+.wrapCart{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.cartElement{
+    display: flex;
+    align-items: center;
+}
+.titleCartItem{
+    width: 200px;
+    margin-right: 10px;
+}
+.quantity{
+    min-width: 150px;
+}
+.priceCartItem, .priceCartItemHeader{
+    width: 150px;
+}
+
+.priceCartItem::after{
+    content: "$";
+}

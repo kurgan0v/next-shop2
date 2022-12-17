@@ -5,3 +5,15 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
+module.exports = {
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: '**.dummyjson.com',
+        port: '',
+        pathname: '/data/products/**',
+      },
+    ],
+  },
+}
